@@ -3,37 +3,25 @@ A complete and production-ready sentiment analysis pipeline using classical mach
 
 📌 Features
 Preprocessing pipeline with:
-
 Custom stopword removal
-
 URL, hashtag, mention, HTML, and punctuation cleaning
-
 Tokenization without NLTK
-
 Dataset cleaning and batch-wise processing
-
 Exploratory data analysis:
-
 Sentiment distribution
-
 Text length analysis
 
+
 Model training using:
-
 Logistic Regression
-
 Naive Bayes
-
 Linear SVC
-
 Random Forest
 
 Support for both CountVectorizer and TF-IDF features
 
 Evaluation metrics:
-
 Accuracy, precision, recall, F1-score
-
 Confusion matrix heatmaps
 
 Misclassification pattern analysis
@@ -46,16 +34,13 @@ Final sentiment prediction API-ready function for deployment
 train.csv and test.csv files with text and sentiment columns
 
 Sentiment labels mapped to numerical values:
-
 0 = Negative, 2 = Neutral, 4 = Positive
 
 🏗️ Model Architecture
 Text Preprocessing
 ➜ Clean → Tokenize → Remove Stopwords → Vectorize
-
 Model Training (Pipeline)
 ➜ Vectorizer + Classifier (e.g., TF-IDF + Logistic Regression)
-
 Evaluation
 ➜ Accuracy, Classification Report, F1 Scores
 
@@ -67,7 +52,6 @@ Prediction API
 
 🛠️ Tech Stack
 Technolgies: Python, HTML, CSS, Flask
-
 Libraries: scikit-learn, pandas, matplotlib, seaborn, pickle
 
 No external NLP libraries (e.g., NLTK, SpaCy)
