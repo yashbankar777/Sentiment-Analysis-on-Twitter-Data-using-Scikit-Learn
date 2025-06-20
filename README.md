@@ -1,86 +1,97 @@
-🧠 Sentiment Analysis with Scikit-Learn
+# 🧠 Sentiment Analysis with Scikit-Learn
+
 A complete and production-ready sentiment analysis pipeline using classical machine learning models. This project performs robust text preprocessing, model training, evaluation, and prediction without relying on heavy NLP libraries like NLTK or SpaCy.
 
-📌 Features
-🧹 Preprocessing pipeline with:
-• 🛑 Custom stopword removal
-• 🔗 URL, hashtag, mention, HTML, and punctuation cleaning
-• ✂️ Tokenization without NLTK
+---
 
-🧼 Dataset cleaning and batch-wise processing
+## 📌 Features
 
-📊 Exploratory data analysis:
-• 📈 Sentiment distribution
-• 📏 Text length analysis
+🧹 **Preprocessing pipeline with**:  
+- 🛑 Custom stopword removal  
+- 🔗 URL, hashtag, mention, HTML, and punctuation cleaning  
+- ✂️ Tokenization without NLTK  
 
-🤖 Model training using:
-• ⚙️ Logistic Regression
-• 🌲 Random Forest
-• 📬 Naive Bayes
-• 📐 Linear SVC
+🧼 **Dataset cleaning and batch-wise processing**  
 
-🧠 Feature extraction:
-• 🧮 CountVectorizer
-• 📊 TfidfVectorizer
+📊 **Exploratory data analysis**:  
+- 📈 Sentiment distribution  
+- 📏 Text length analysis  
 
-📏 Evaluation metrics:
-• 🎯 Accuracy, precision, recall, F1-score
-• 🧊 Confusion matrix heatmaps
+🤖 **Model training using**:  
+- ⚙️ Logistic Regression  
+- 🌲 Random Forest  
+- 📬 Naive Bayes  
+- 📐 Linear SVC  
 
-🚨 Misclassification pattern analysis
+🧠 **Feature extraction**:  
+- 🧮 CountVectorizer  
+- 📊 TfidfVectorizer  
 
-💾 Model persistence:
-• 📦 Saves the best-performing model to a .pkl file
+📏 **Evaluation metrics**:  
+- 🎯 Accuracy, precision, recall, F1-score  
+- 🧊 Confusion matrix heatmaps  
 
-🔮 Prediction API:
-• 🚀 API-ready complete_sentiment_analysis() function
+🚨 **Misclassification pattern analysis**  
 
-📂 Dataset
-• 🗂️ train.csv and test.csv files with text and sentiment columns
-• 🧾 Sentiment labels mapped to numerical values:
+💾 **Model persistence**:  
+- 📦 Saves the best-performing model to a `.pkl` file  
 
-0 = ❌ Negative
+🔮 **Prediction API**:  
+- 🚀 API-ready `complete_sentiment_analysis()` function  
 
-2 = ⚪ Neutral
+---
 
-4 = ✅ Positive
+## 📂 Dataset
 
-🏗️ Model Architecture
-🧱 Text Preprocessing
-→ Clean → Tokenize → Remove Stopwords → Vectorize
+- 🗂️ `train.csv` and `test.csv` files with `text` and `sentiment` columns  
+- 🧾 Sentiment labels mapped to numerical values:  
+  - `0` = ❌ Negative  
+  - `2` = ⚪ Neutral  
+  - `4` = ✅ Positive  
 
-⚙️ Model Training (Pipeline)
-→ Vectorizer + Classifier (e.g., TF-IDF + Logistic Regression)
+---
 
-📏 Evaluation
-→ Accuracy, Classification Report, F1 Scores
+## 🏗️ Model Architecture
 
-💾 Model Saving
-→ Save best model using pickle
+🧱 **Text Preprocessing**  
+→ Clean → Tokenize → Remove Stopwords → Vectorize  
 
-🧪 Prediction API
-→ Reusable function complete_sentiment_analysis() for inference
+⚙️ **Model Training (Pipeline)**  
+→ Vectorizer + Classifier (e.g., TF-IDF + Logistic Regression)  
 
-🛠️ Tech Stack
-🧑‍💻 Technologies:
-• Python 🐍
-• HTML 📝
-• CSS 🎨
-• Flask 🌐
+📏 **Evaluation**  
+→ Accuracy, Classification Report, F1 Scores  
 
-📚 Libraries:
-• scikit-learn 📘
-• pandas 🐼
-• matplotlib 📊
-• seaborn 🌈
-• pickle 📦
+💾 **Model Saving**  
+→ Save best model using `pickle`  
 
-🧼 No external NLP libraries used (e.g., no NLTK, no SpaCy) ❌📚
+🧪 **Prediction API**  
+→ Reusable function `complete_sentiment_analysis()` for inference  
 
-🔍 Sample Output
-text
-Copy
-Edit
+---
+
+## 🛠️ Tech Stack
+
+🧑‍💻 **Technologies**:  
+- Python 🐍  
+- HTML 📝  
+- CSS 🎨  
+- Flask 🌐  
+
+📚 **Libraries**:  
+- `scikit-learn` 📘  
+- `pandas` 🐼  
+- `matplotlib` 📊  
+- `seaborn` 🌈  
+- `pickle` 📦  
+
+🧼 **No external NLP libraries used** (e.g., no NLTK, no SpaCy) ❌📚  
+
+---
+
+## 🔍 Sample Output
+
+```text
 Text: "Worst purchase ever! Complete waste of money!"
 Sentiment: Negative ❌
 Confidence: 0.982 🎯
